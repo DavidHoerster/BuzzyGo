@@ -5,7 +5,7 @@
     <ConfigurationSettings>
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
       <Setting name="DataConnectionString" value="UseDevelopmentStorage=true" />
-      <Setting name="BuzzyQuerySideConnectionString" value="Data Source=AGILE-L03\DSHSQL08_1;Initial Catalog=BuzzyGo;User ID=buzzy;Password=buzzy;Trusted_Connection=False;Encrypt=True;trustServerCertificate=true;" />
+      <Setting name="BuzzyQuerySideConnectionString" value="Data Source=SERVER;Initial Catalog=BuzzyGo;User ID=buzzy;Password=buzzy;Trusted_Connection=False;Encrypt=True;trustServerCertificate=true;" />
     </ConfigurationSettings>
   </Role>
   <Role name="BuzzyGo.QueueMonitor">
@@ -14,8 +14,8 @@
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
       <Setting name="DiagnosticsConnectionString" value="UseDevelopmentStorage=true" />
       <Setting name="DataConnectionString" value="UseDevelopmentStorage=true" />
-      <Setting name="EventStoreConnectionString" value="Data Source=AGILE-L03\DSHSQL08_1;Initial Catalog=BuzzyGo_Events;User ID=sa;Password=P@n0ptic;Trusted_Connection=False;Encrypt=True;trustServerCertificate=true;" />
-      <Setting name="BuzzyQuerySideConnectionString" value="Data Source=AGILE-L03\DSHSQL08_1;Initial Catalog=BuzzyGo;User ID=buzzy;Password=buzzy;Trusted_Connection=False;Encrypt=True;trustServerCertificate=true;" />
+      <Setting name="EventStoreConnectionString" value="Data Source=SERVER;Initial Catalog=BuzzyGo_Events;User ID=sa;Password=PASSWORD;Trusted_Connection=False;Encrypt=True;trustServerCertificate=true;" />
+      <Setting name="BuzzyQuerySideConnectionString" value="Data Source=SERVER;Initial Catalog=BuzzyGo;User ID=buzzy;Password=buzzy;Trusted_Connection=False;Encrypt=True;trustServerCertificate=true;" />
     </ConfigurationSettings>
   </Role>
 </ServiceConfiguration>
