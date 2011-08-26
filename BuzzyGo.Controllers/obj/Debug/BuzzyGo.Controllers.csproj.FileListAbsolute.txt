@@ -1,0 +1,9 @@
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Controllers\bin\Debug\BuzzyGo.Controllers.dll
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Controllers\bin\Debug\BuzzyGo.Controllers.pdb
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Controllers\obj\Debug\ResolveAssemblyReference.cache
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Controllers\obj\Debug\BuzzyGo.Controllers.dll
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Controllers\obj\Debug\BuzzyGo.Controllers.pdb
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Controllers\obj\Debug\Decl\BuzzyGo.Controllers.dll
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Controllers\obj\Debug\Decl\BuzzyGo.Controllers.pdb
+C:\Code4X\devLink\BuzzyGo\BuildDrop\BuzzyGo.Controllers.dll
+C:\Code4X\devLink\BuzzyGo\BuildDrop\BuzzyGo.Controllers.pdb

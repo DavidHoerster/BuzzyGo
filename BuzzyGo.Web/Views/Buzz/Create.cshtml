@@ -1,0 +1,44 @@
+﻿@model BuzzyGo.Model.Buzz.CreateBuzzViewModel
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm("Create", "Buzz", FormMethod.Post)) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend></legend>
+        <p>Create a new BuzzyGo BuzzWord.  Enter the name of your buzzword and it's category.  Click 'Create' to save your new buzzword!</p>
+        <div style="float:right;">
+            <button id="submitBuzz">Create Buzzword</button>
+        </div>
+        <br />
+
+       <div class="editor-label">
+            @Html.LabelFor(model => model.TheBuzzword.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TheBuzzword.Name)
+            @Html.ValidationMessageFor(model => model.TheBuzzword.Name)
+        </div>
+
+       <div class="editor-label">
+            @Html.LabelFor(model => model.TheBuzzword.Category)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(model => model.TheBuzzword.Category, 
+                                    Model.BuzzwordCategories.Select(c => new SelectListItem { Text = c.Name, Value = c.Name }))
+        </div>
+    </fieldset>
+}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('button').button();
+        $('#templatemo_menu ul li a').removeClass('current');
+        $('#menubuzz').addClass('current');
+    });
+</script>

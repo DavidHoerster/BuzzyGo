@@ -1,0 +1,8 @@
+C:\Code4X\devLink\BuzzyGo\BuildDrop\BuzzyGo.Repository.dll.config
+C:\Code4X\devLink\BuzzyGo\BuildDrop\BuzzyGo.Repository.dll
+C:\Code4X\devLink\BuzzyGo\BuildDrop\BuzzyGo.Repository.pdb
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Repository\obj\Debug\ResolveAssemblyReference.cache
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Repository\obj\Debug\BuzzyGo.Repository.dll
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Repository\obj\Debug\BuzzyGo.Repository.pdb
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Repository\obj\Debug\Decl\BuzzyGo.Repository.dll
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Repository\obj\Debug\Decl\BuzzyGo.Repository.pdb

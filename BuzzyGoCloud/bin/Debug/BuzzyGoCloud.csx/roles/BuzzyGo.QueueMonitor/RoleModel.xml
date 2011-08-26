@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RoleModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BuzzyGo.QueueMonitor" version="1.4.20407.2049" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+  <Startup>
+    <Task commandLine="DiagnosticsAgent.exe" taskType="background" relativePath="plugins\Diagnostics">
+      <Environment>
+        <Variable name="WaRoleType" value="WorkerRole" />
+      </Environment>
+    </Task>
+    <Task commandLine="DiagnosticsAgent.exe /blockStartup" relativePath="plugins\Diagnostics">
+      <Environment>
+        <Variable name="WaRoleType" value="WorkerRole" />
+      </Environment>
+    </Task>
+  </Startup>
+  <Runtime />
+  <ConfigurationSettings>
+    <Setting name="ConnectionString" nameSpace="Microsoft.WindowsAzure.Plugins.Diagnostics" />
+  </ConfigurationSettings>
+  <Properties>
+    <Property name="RoleType" value="Worker" />
+    <Property name="RoleName" value="BuzzyGo.QueueMonitor" />
+    <Property name="ProjectName" value="BuzzyGo.QueueMonitor" />
+    <Property name="Configuration" value="Debug" />
+    <Property name="Platform" value="AnyCPU" />
+    <Property name="SourceDir" value="" />
+    <Property name="SitePhysicalPath" value="" />
+    <Property name="OutputDir" value="C:\Code4X\devLink\BuzzyGo\BuzzyGoCloud\obj\Debug\BuzzyGo.QueueMonitor\" />
+    <Property name="EntryPoint" value="BuzzyGo.QueueMonitor.dll" />
+    <Property name="RoleTargetFramework" value="v4.0" />
+    <Property name="OriginalItemSpec" value="C:\Code4X\devLink\BuzzyGo\BuzzyGoCloud\BuzzyGoCloud.ccproj" />
+    <Property name="MSBuildSourceProjectFile" value="C:\Code4X\devLink\BuzzyGo\BuzzyGoCloud\BuzzyGoCloud.ccproj" />
+    <Property name="MSBuildSourceTargetName" value="ResolveSingleWorkerRoleReference" />
+    <Property name="TargetFrameworkVersion" value="v4.0" />
+    <Property name="TargetRuntimeVersion" value="v4.0" />
+  </Properties>
+</RoleModel>

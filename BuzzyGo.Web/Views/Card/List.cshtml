@@ -1,0 +1,79 @@
+﻿@model BuzzyGo.Model.Card.ListCardsViewModel
+
+@{
+    ViewBag.Title = "My Cards";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>My Cards</h2>
+
+<p>
+    @Html.ActionLink("Create New Card", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Purpose
+        </th>
+        <th>
+            DateCreated
+        </th>
+        <th>
+            IsActive
+        </th>
+        <th>
+            IsWinner
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model.Cards) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Purpose)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateCreated)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsActive)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsWinner)
+        </td>
+        <td>
+            @Html.ActionLink("View Card", "View", new { id=item.CardID }) |
+            <a href='@Url.DeleteCard(item.CardID)' class='deleteLink'>Delete Card</a>
+        </td>
+    </tr>
+}
+
+</table>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#templatemo_menu ul li a').removeClass('current');
+        $('#menucards').addClass('current');
+
+        $('.deleteLink').click(function (e) {
+            e.preventDefault();
+            var theTableRow = $(this).parent().parent();
+            $.ajax({
+                url: $(this).attr('href'),
+                type: 'DELETE',
+                dataType: 'json',
+                error: function () { alert('boo'); },
+                success: function (data) {
+                    //uncomment this line to show how to improve user experience
+                    //$(theTableRow).remove();
+                }
+            });
+        });
+    });
+</script>

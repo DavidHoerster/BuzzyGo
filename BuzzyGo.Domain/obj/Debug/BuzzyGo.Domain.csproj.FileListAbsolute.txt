@@ -1,0 +1,7 @@
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Domain\obj\Debug\ResolveAssemblyReference.cache
+C:\Code4X\devLink\BuzzyGo\BuildDrop\BuzzyGo.Domain.dll
+C:\Code4X\devLink\BuzzyGo\BuildDrop\BuzzyGo.Domain.pdb
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Domain\obj\Debug\BuzzyGo.Domain.dll
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Domain\obj\Debug\BuzzyGo.Domain.pdb
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Domain\obj\Debug\Decl\BuzzyGo.Domain.dll
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Domain\obj\Debug\Decl\BuzzyGo.Domain.pdb

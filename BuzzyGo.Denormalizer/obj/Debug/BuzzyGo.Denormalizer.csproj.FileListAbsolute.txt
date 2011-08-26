@@ -1,0 +1,9 @@
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Denormalizer\bin\Debug\BuzzyGo.Denormalizer.dll
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Denormalizer\bin\Debug\BuzzyGo.Denormalizer.pdb
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Denormalizer\obj\Debug\ResolveAssemblyReference.cache
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Denormalizer\obj\Debug\BuzzyGo.Denormalizer.dll
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Denormalizer\obj\Debug\BuzzyGo.Denormalizer.pdb
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Denormalizer\obj\Debug\Decl\BuzzyGo.Denormalizer.dll
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Denormalizer\obj\Debug\Decl\BuzzyGo.Denormalizer.pdb
+C:\Code4X\devLink\BuzzyGo\BuildDrop\BuzzyGo.Denormalizer.dll
+C:\Code4X\devLink\BuzzyGo\BuildDrop\BuzzyGo.Denormalizer.pdb

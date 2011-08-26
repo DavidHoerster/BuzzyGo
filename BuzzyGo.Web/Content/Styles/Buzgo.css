@@ -1,0 +1,37 @@
+﻿
+.buzgo tbody tr td
+{
+    width: 100px;
+    height: 100px;
+    border-width: thin;
+    border-color: Black;
+    border-style: solid;
+    border-spacing: 0px;
+    background-color: White;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.buzgo thead tr th
+{
+    width: 100px;
+    height: 100px;
+    border-width: medium;
+    border-color: Black;
+    border-style: double;
+    border-spacing: 0px;
+    font-size: 2em;
+    padding: 0px;
+    background-color: Gray;
+}
+
+.buzgo-marked
+{
+    background-image: url(/content/images/bingochip_red_100x80.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: Black;
+    font-weight: bold;
+}

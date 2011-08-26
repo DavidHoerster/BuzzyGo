@@ -1,0 +1,14 @@
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Events\bin\Debug\BuzzyGo.Events.dll
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Events\bin\Debug\BuzzyGo.Events.pdb
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Events\bin\Debug\Ncqrs.dll
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Events\bin\Debug\Newtonsoft.Json.dll
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Events\bin\Debug\log4net.dll
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Events\bin\Debug\Ncqrs.pdb
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Events\bin\Debug\Newtonsoft.Json.pdb
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Events\obj\Debug\ResolveAssemblyReference.cache
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Events\obj\Debug\BuzzyGo.Events.dll
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Events\obj\Debug\BuzzyGo.Events.pdb
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Events\obj\Debug\Decl\BuzzyGo.Events.dll
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Events\obj\Debug\Decl\BuzzyGo.Events.pdb
+C:\Code4X\devLink\BuzzyGo\BuildDrop\BuzzyGo.Events.dll
+C:\Code4X\devLink\BuzzyGo\BuildDrop\BuzzyGo.Events.pdb

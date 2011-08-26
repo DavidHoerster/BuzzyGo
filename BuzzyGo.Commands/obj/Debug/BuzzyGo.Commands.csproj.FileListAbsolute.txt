@@ -1,0 +1,14 @@
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Commands\bin\Debug\BuzzyGo.Commands.dll
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Commands\bin\Debug\BuzzyGo.Commands.pdb
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Commands\bin\Debug\Ncqrs.dll
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Commands\bin\Debug\Newtonsoft.Json.dll
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Commands\bin\Debug\log4net.dll
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Commands\bin\Debug\Ncqrs.pdb
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Commands\bin\Debug\Newtonsoft.Json.pdb
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Commands\obj\Debug\ResolveAssemblyReference.cache
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Commands\obj\Debug\BuzzyGo.Commands.dll
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Commands\obj\Debug\BuzzyGo.Commands.pdb
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Commands\obj\Debug\Decl\BuzzyGo.Commands.dll
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Commands\obj\Debug\Decl\BuzzyGo.Commands.pdb
+C:\Code4X\devLink\BuzzyGo\BuildDrop\BuzzyGo.Commands.dll
+C:\Code4X\devLink\BuzzyGo\BuildDrop\BuzzyGo.Commands.pdb

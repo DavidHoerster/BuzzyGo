@@ -1,0 +1,96 @@
+﻿@model BuzzyGo.Model.Card.CreateCardViewModel
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create A New BuzzyGo Card!</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <input type="hidden" id='wordlist' name='wordlist' />
+    <fieldset>
+        <legend></legend>
+        <p>Create a new BuzzyGo card.  Enter the name of your card and it's purpose (e.g. Biz Meetings, Family) and review your random words.  You can get a new set of words by clicking the 'Generate New Words' button.  Click 'Create' and you're ready to play!</p>
+        <div style="float:right;">
+            <button id="submitCard">Create Card</button>
+            <button id="getNewWords">Get New BuzzWord List</button>
+        </div>
+        <br />
+         <div style="float:right;">
+            <div class="editor-label">
+                <label for="lstWords">BuzzWords:</label>
+            </div>
+            <div class="editor-field">
+                @Html.DropDownListFor(model => model.CardBuzzWords,
+                                        Model.CardBuzzWords.Select(c => new SelectListItem
+                                        {
+                                            Text = c.BuzzWord,
+                                            Value = c.BuzzWordID.ToString()
+                                        }),
+                                        new { size = 12, @id="lstWords" })
+            </div>
+        </div>
+
+       <div class="editor-label">
+            @Html.LabelFor(model => model.CardHeader.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CardHeader.Name)
+            @Html.ValidationMessageFor(model => model.CardHeader.Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CardHeader.Purpose)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CardHeader.Purpose)
+            @Html.ValidationMessageFor(model => model.CardHeader.Purpose)
+        </div>
+
+
+@*
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+*@
+    </fieldset>
+}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        //$('#wordlist').val(JSON.stringify(@Model.CardBuzzWords));
+        $('#templatemo_menu ul li a').removeClass('current');
+        $('#menucreate').addClass('current');
+
+        $('#getNewWords').click(function (e) {
+            e.preventDefault();
+            InitiateGetRandomBuzzWordsCall(24);
+        });
+        $('button').button();
+        InitiateGetRandomBuzzWordsCall(24);
+    });
+
+    function InitiateGetRandomBuzzWordsCall(numOfWords) {
+        $.ajax({
+            url: '/Card/GetRandomBuzzWords',
+            data: { 'buzzwordsToRetrieve': numOfWords },
+            cache: false,
+            dataType: 'json',
+            type: 'GET',
+            success: OnRandomBuzzWordsRetrievalSuccess,
+            error: function () { alert('boo'); }
+        });
+    }
+
+    function OnRandomBuzzWordsRetrievalSuccess(data) {
+        var wordList = $('#lstWords');
+        wordList.empty();
+        $.each(data, function (i, val) {
+            wordList.append("<option value='" + val.BuzzWordID + "'>" + val.BuzzWord + "</option>");
+        });
+        wordList.attr('size', (data.length / 2));
+        $('#wordlist').val(JSON.stringify(data));
+    }
+</script>

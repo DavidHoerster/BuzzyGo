@@ -1,0 +1,7 @@
+C:\Code4X\devLink\BuzzyGo\BuildDrop\BuzzyGo.Web.Utility.dll
+C:\Code4X\devLink\BuzzyGo\BuildDrop\BuzzyGo.Web.Utility.pdb
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Web.Utility\obj\Debug\ResolveAssemblyReference.cache
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Web.Utility\obj\Debug\BuzzyGo.Web.Utility.dll
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Web.Utility\obj\Debug\BuzzyGo.Web.Utility.pdb
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Web.Utility\obj\Debug\Decl\BuzzyGo.Web.Utility.dll
+C:\Code4X\devLink\BuzzyGo\BuzzyGo.Web.Utility\obj\Debug\Decl\BuzzyGo.Web.Utility.pdb

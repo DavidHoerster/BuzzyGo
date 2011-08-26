@@ -1,0 +1,16 @@
+C:\Code4X\devLink\BuzzyGo\QueueMonitor\obj\Debug\ResolveAssemblyReference.cache
+C:\Code4X\devLink\BuzzyGo\QueueMonitor\bin\Debug\QueueMonitor.dll
+C:\Code4X\devLink\BuzzyGo\QueueMonitor\bin\Debug\QueueMonitor.pdb
+C:\Code4X\devLink\BuzzyGo\QueueMonitor\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Code4X\devLink\BuzzyGo\QueueMonitor\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+C:\Code4X\devLink\BuzzyGo\QueueMonitor\bin\Debug\Ncqrs.dll
+C:\Code4X\devLink\BuzzyGo\QueueMonitor\bin\Debug\Newtonsoft.Json.dll
+C:\Code4X\devLink\BuzzyGo\QueueMonitor\bin\Debug\log4net.dll
+C:\Code4X\devLink\BuzzyGo\QueueMonitor\bin\Debug\Ncqrs.pdb
+C:\Code4X\devLink\BuzzyGo\QueueMonitor\bin\Debug\Newtonsoft.Json.pdb
+C:\Code4X\devLink\BuzzyGo\QueueMonitor\obj\Debug\QueueMonitor.dll
+C:\Code4X\devLink\BuzzyGo\QueueMonitor\obj\Debug\QueueMonitor.pdb
+C:\Code4X\devLink\BuzzyGo\QueueMonitor\obj\Debug\Decl\QueueMonitor.dll
+C:\Code4X\devLink\BuzzyGo\QueueMonitor\obj\Debug\Decl\QueueMonitor.pdb
+C:\Code4X\devLink\BuzzyGo\BuildDrop\QueueMonitor.dll
+C:\Code4X\devLink\BuzzyGo\BuildDrop\QueueMonitor.pdb

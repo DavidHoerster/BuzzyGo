@@ -1,0 +1,8 @@
+C:\Code4X\devLink\BuzzyGo\BuildDrop\BuzzyGo.QueueMonitor.dll.config
+C:\Code4X\devLink\BuzzyGo\BuildDrop\BuzzyGo.QueueMonitor.dll
+C:\Code4X\devLink\BuzzyGo\BuildDrop\BuzzyGo.QueueMonitor.pdb
+C:\Code4X\devLink\BuzzyGo\WorkerRole1\obj\Debug\ResolveAssemblyReference.cache
+C:\Code4X\devLink\BuzzyGo\WorkerRole1\obj\Debug\BuzzyGo.QueueMonitor.dll
+C:\Code4X\devLink\BuzzyGo\WorkerRole1\obj\Debug\BuzzyGo.QueueMonitor.pdb
+C:\Code4X\devLink\BuzzyGo\WorkerRole1\obj\Debug\Decl\BuzzyGo.QueueMonitor.dll
+C:\Code4X\devLink\BuzzyGo\WorkerRole1\obj\Debug\Decl\BuzzyGo.QueueMonitor.pdb

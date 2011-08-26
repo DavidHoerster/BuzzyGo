@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BuzzyGo" Class="BuzzyCardsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=agile-l03\dshsql08_1;Initial Catalog=BuzzyGo;Persist Security Info=True;User ID=buzzy" SettingsObjectName="BuzzyGo.Repository.Properties.Settings" SettingsPropertyName="BuzzyGoConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ObjectSequence" Member="ObjectSequences">
+    <Type Name="ObjectSequence">
+      <Column Name="SeqID" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SeqVal" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BuzzCategory" Member="BuzzCategories">
+    <Type Name="BuzzCategory">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CategoryID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Buzzword" Member="Buzzwords">
+    <Type Name="Buzzword">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BuzzID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Category" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TimesUsed" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TimesMarked" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CardSquare" Member="CardSquares">
+    <Type Name="CardSquare">
+      <Column Name="CardID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="RowNum" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ColNum" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IsMarked" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DateUpdated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SquareID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BuzzID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Card" Member="Cards">
+    <Type Name="Card">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CardID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Purpose" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsWinner" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="dbo.GetNewSeqVal_ObjectSequence" Method="GetNewSequence">
+    <Parameter Name="seqGuid" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="newSeqVal" Type="System.Int64" DbType="BigInt" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.OBJECTSEQUENCE_GetGuidForSequence" Method="GetGuidForSequence">
+    <Parameter Name="sequenceID" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="sequenceValue" Type="System.Guid" DbType="UniqueIdentifier" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

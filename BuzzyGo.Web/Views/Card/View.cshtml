@@ -1,0 +1,70 @@
+﻿@model BuzzyGo.Model.Card.ViewCardViewModel
+
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Viewing Card <strong>@Model.Name</strong></h2>
+@{ int rowNum = 0; }
+
+<table class='buzgo'>
+    <thead>
+        <tr>
+            <th>B</th>
+            <th>U</th>
+            <th>Z</th>
+            <th>G</th>
+            <th>O</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int i = 1; i < 6; i++)
+        {
+            <tr>
+            @{
+                var rowItems = Model.CardSquareInfo.Where(r => r.RowNum == i).ToList();
+                for (int j = 0; j < 5; j++)
+                {
+                    if (rowItems[j].IsMarked)
+                    {
+                        <td data.id='@rowItems[j].SquareID' class='buzgo-marked'>@rowItems[j].Value</td>
+                    }
+                    else
+                    {
+                        <td data.id='@rowItems[j].SquareID'>@rowItems[j].Value</td>
+                    }
+                }
+            }
+            </tr>
+        }
+    </tbody>
+</table>
+<p>
+    @Html.ActionLink("Back to List", "List")
+</p>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#templatemo_menu ul li a').removeClass('current')
+        $('#menucards').addClass('current');
+
+        $(".buzgo tbody tr td").click(function (e) {
+            var squareID = $(this).attr('data.id'),
+                isMarked = $(this).hasClass('buzgo-marked');
+            $.ajax({
+                url: '/Card/SetSquareStatus',
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    'cardID': @Model.CardID,
+                    'squareID': squareID,
+                    'isMarked': !isMarked
+                },
+                error: function () { alert('boo!'); },
+                success: function () { }
+            });
+            $(this).toggleClass('buzgo-marked');
+        });
+    });
+</script>
